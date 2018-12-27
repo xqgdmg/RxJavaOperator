@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCreate"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="create" />
+
+        <TextView
+            android:id="@+id/tvJust"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="just" />
+
+        <TextView
+            android:id="@+id/tvFromArray"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="FromArray" />
+
+        <TextView
+            android:id="@+id/tvFromCallable"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="FromCallable" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
