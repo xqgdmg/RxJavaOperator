@@ -55,6 +55,38 @@
             android:textSize="14sp"
             android:text="FromCallable" />
 
+        <TextView
+            android:id="@+id/tvFromFuture"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="FromFuture" />
+
+        <TextView
+            android:id="@+id/tvFromIterable"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="FromIterable" />
+
+        <TextView
+            android:id="@+id/tvDefer"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Defer" />
 
     </LinearLayout>
 

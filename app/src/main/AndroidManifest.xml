@@ -21,6 +21,9 @@
         <activity android:name=".operator.Activity_Just"/>
         <activity android:name=".operator.Activity_FromArray"/>
         <activity android:name=".operator.Activity_FromCallable"/>
+        <activity android:name=".operator.Activity_FromFuture"/>
+        <activity android:name=".operator.Activity_FromIterable"/>
+        <activity android:name=".operator.Activity_Defer"/>
 
     </application>
 

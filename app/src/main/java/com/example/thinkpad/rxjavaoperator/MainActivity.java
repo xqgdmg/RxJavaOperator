@@ -7,8 +7,11 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Create;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Defer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FromArray;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FromCallable;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_FromFuture;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_FromIterable;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Just;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvJust;
     private TextView tvFromArray;
     private TextView tvFromCallable;
+    private TextView tvFromFuture;
+    private TextView tvFromIterable;
+    private TextView tvDefer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvJust.setOnClickListener(this);
         tvFromArray.setOnClickListener(this);
         tvFromCallable.setOnClickListener(this);
-
+        tvFromFuture.setOnClickListener(this);
+        tvFromIterable.setOnClickListener(this);
+        tvDefer.setOnClickListener(this);
     }
 
     private void initView() {
@@ -40,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvJust = (TextView) findViewById(R.id.tvJust);
         tvFromArray = (TextView) findViewById(R.id.tvFromArray);
         tvFromCallable = (TextView) findViewById(R.id.tvFromCallable);
+        tvFromFuture = (TextView) findViewById(R.id.tvFromFuture);
+        tvFromIterable = (TextView) findViewById(R.id.tvFromIterable);
+        tvDefer = (TextView) findViewById(R.id.tvDefer);
     }
 
     @Override
@@ -56,6 +67,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvFromCallable:
                 startActivity(new Intent(MainActivity.this, Activity_FromCallable.class));
+                break;
+            case R.id.tvFromFuture:
+                startActivity(new Intent(MainActivity.this, Activity_FromFuture.class));
+                break;
+            case R.id.tvFromIterable:
+                startActivity(new Intent(MainActivity.this, Activity_FromIterable.class));
+                break;
+            case R.id.tvDefer:
+                startActivity(new Intent(MainActivity.this, Activity_Defer.class));
                 break;
         }
     }
