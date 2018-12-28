@@ -16,12 +16,14 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_FromArray;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FromCallable;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FromFuture;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FromIterable;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_GroupBy;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Interval;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_IntervalRange;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Just;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Map;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Range;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_RangeLong;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Scan;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvFlatMap;
     private TextView tvConcatMap;
     private TextView tvBuffer;
+    private TextView tvGroupBy;
+    private TextView tvScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvFlatMap.setOnClickListener(this);
         tvConcatMap.setOnClickListener(this);
         tvBuffer.setOnClickListener(this);
+        tvGroupBy.setOnClickListener(this);
+        tvScan.setOnClickListener(this);
     }
 
     private void initView() {
@@ -91,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvFlatMap = (TextView) findViewById(R.id.tvFlatMap);
         tvConcatMap = (TextView) findViewById(R.id.tvConcatMap);
         tvBuffer = (TextView) findViewById(R.id.tvBuffer);
+        tvGroupBy = (TextView) findViewById(R.id.tvGroupBy);
+        tvScan = (TextView) findViewById(R.id.tvScan);
     }
 
     @Override
@@ -146,6 +154,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvBuffer:
                 startActivity(new Intent(MainActivity.this, Activity_Buffer.class));
+                break;
+            case R.id.tvGroupBy:
+                startActivity(new Intent(MainActivity.this, Activity_GroupBy.class));
+                break;
+            case R.id.tvScan:
+                startActivity(new Intent(MainActivity.this, Activity_Scan.class));
                 break;
         }
     }

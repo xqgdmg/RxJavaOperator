@@ -198,6 +198,28 @@
             android:textSize="14sp"
             android:text="Buffer" />
 
+        <TextView
+            android:id="@+id/tvGroupBy"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="GroupBy" />
+
+        <TextView
+            android:id="@+id/tvScan"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Scan" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -34,6 +34,8 @@
         <activity android:name=".operator.Activity_FlatMap"/>
         <activity android:name=".operator.Activity_ConcatMap"/>
         <activity android:name=".operator.Activity_Buffer"/>
+        <activity android:name=".operator.Activity_GroupBy"/>
+        <activity android:name=".operator.Activity_Scan"/>
 
     </application>
 
