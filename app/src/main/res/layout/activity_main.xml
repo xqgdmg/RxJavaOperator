@@ -220,6 +220,105 @@
             android:textSize="14sp"
             android:text="Scan" />
 
+        <TextView
+            android:id="@+id/tvWindow"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Window" />
+
+        <TextView
+            android:id="@+id/tvConcat"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Concat" />
+
+        <TextView
+            android:id="@+id/tvConcatArray"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="ConcatArray" />
+
+        <TextView
+            android:id="@+id/tvConcatMerge"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="ConcatMerge" />
+
+        <TextView
+            android:id="@+id/tvConcatArrayDelayError_MergeArrayDelayError"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="ConcatArrayDelayError_MergeArrayDelayError" />
+
+        <TextView
+            android:id="@+id/tvZip"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Zip" />
+
+        <TextView
+            android:id="@+id/tvCombineLatest_CombineLatestDelayError"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="CombineLatest_CombineLatestDelayError" />
+
+        <TextView
+            android:id="@+id/tvReduce"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Reduce" />
+
+        <TextView
+            android:id="@+id/tvCollect"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Collect" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

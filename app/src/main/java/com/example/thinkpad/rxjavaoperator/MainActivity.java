@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Buffer;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Collect;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_CombineLatest_CombineLatestDelayError;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Concat;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatArray;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatArrayDelayError_MergeArrayDelayError;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatMap;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Create;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Defer;
@@ -21,10 +26,14 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_Interval;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_IntervalRange;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Just;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Map;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Merge;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Range;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_RangeLong;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Reduce;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Scan;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -47,6 +56,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvBuffer;
     private TextView tvGroupBy;
     private TextView tvScan;
+    private TextView tvWindow;
+    private TextView tvConcat;
+    private TextView tvConcatArray;
+    private TextView tvConcatMerge;
+    private TextView tvConcatArrayDelayError_MergeArrayDelayError;
+    private TextView tvZip;
+    private TextView tvCombineLatest_CombineLatestDelayError;
+    private TextView tvReduce;
+    private TextView tvCollect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +95,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvBuffer.setOnClickListener(this);
         tvGroupBy.setOnClickListener(this);
         tvScan.setOnClickListener(this);
+        tvWindow.setOnClickListener(this);
+        tvConcat.setOnClickListener(this);
+        tvConcatArray.setOnClickListener(this);
+        tvConcatMerge.setOnClickListener(this);
+        tvConcatArrayDelayError_MergeArrayDelayError.setOnClickListener(this);
+        tvZip.setOnClickListener(this);
+        tvCombineLatest_CombineLatestDelayError.setOnClickListener(this);
+        tvReduce.setOnClickListener(this);
+        tvCollect.setOnClickListener(this);
     }
 
     private void initView() {
@@ -99,6 +126,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvBuffer = (TextView) findViewById(R.id.tvBuffer);
         tvGroupBy = (TextView) findViewById(R.id.tvGroupBy);
         tvScan = (TextView) findViewById(R.id.tvScan);
+        tvWindow = (TextView) findViewById(R.id.tvWindow);
+        tvConcat = (TextView) findViewById(R.id.tvConcat);
+        tvConcatArray = (TextView) findViewById(R.id.tvConcatArray);
+        tvConcatMerge = (TextView) findViewById(R.id.tvConcatMerge);
+        tvConcatArrayDelayError_MergeArrayDelayError = (TextView) findViewById(R.id.tvConcatArrayDelayError_MergeArrayDelayError);
+        tvZip = (TextView) findViewById(R.id.tvZip);
+        tvCombineLatest_CombineLatestDelayError = (TextView) findViewById(R.id.tvCombineLatest_CombineLatestDelayError);
+        tvReduce = (TextView) findViewById(R.id.tvReduce);
+        tvCollect = (TextView) findViewById(R.id.tvCollect);
     }
 
     @Override
@@ -160,6 +196,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvScan:
                 startActivity(new Intent(MainActivity.this, Activity_Scan.class));
+                break;
+            case R.id.tvWindow:
+                startActivity(new Intent(MainActivity.this, Activity_Window.class));
+                break;
+            case R.id.tvConcat:
+                startActivity(new Intent(MainActivity.this, Activity_Concat.class));
+                break;
+            case R.id.tvConcatArray:
+                startActivity(new Intent(MainActivity.this, Activity_ConcatArray.class));
+                break;
+            case R.id.tvConcatMerge:
+                startActivity(new Intent(MainActivity.this, Activity_Merge.class));
+                break;
+            case R.id.tvConcatArrayDelayError_MergeArrayDelayError:
+                startActivity(new Intent(MainActivity.this, Activity_ConcatArrayDelayError_MergeArrayDelayError.class));
+                break;
+            case R.id.tvZip:
+                startActivity(new Intent(MainActivity.this, Activity_Zip.class));
+                break;
+            case R.id.tvCombineLatest_CombineLatestDelayError:
+                startActivity(new Intent(MainActivity.this, Activity_CombineLatest_CombineLatestDelayError.class));
+            case R.id.tvReduce:
+                startActivity(new Intent(MainActivity.this, Activity_Reduce.class));
+                break;
+            case R.id.tvCollect:
+                startActivity(new Intent(MainActivity.this, Activity_Collect.class));
                 break;
         }
     }

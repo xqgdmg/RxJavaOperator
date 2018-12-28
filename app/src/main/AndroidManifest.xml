@@ -36,6 +36,15 @@
         <activity android:name=".operator.Activity_Buffer"/>
         <activity android:name=".operator.Activity_GroupBy"/>
         <activity android:name=".operator.Activity_Scan"/>
+        <activity android:name=".operator.Activity_Window"/>
+        <activity android:name=".operator.Activity_Concat"/>
+        <activity android:name=".operator.Activity_ConcatArray"/>
+        <activity android:name=".operator.Activity_Merge"/>
+        <activity android:name=".operator.Activity_ConcatArrayDelayError_MergeArrayDelayError"/>
+        <activity android:name=".operator.Activity_Zip"/>
+        <activity android:name=".operator.Activity_CombineLatest_CombineLatestDelayError"/>
+        <activity android:name=".operator.Activity_Reduce"/>
+        <activity android:name=".operator.Activity_Collect"/>
 
     </application>
 
