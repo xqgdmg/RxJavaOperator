@@ -24,6 +24,14 @@
         <activity android:name=".operator.Activity_FromFuture"/>
         <activity android:name=".operator.Activity_FromIterable"/>
         <activity android:name=".operator.Activity_Defer"/>
+        <activity android:name=".operator.Activity_Timer"/>
+        <activity android:name=".operator.Activity_Interval"/>
+        <activity android:name=".operator.Activity_IntervalRange"/>
+        <activity android:name=".operator.Activity_Range"/>
+        <activity android:name=".operator.Activity_RangeLong"/>
+        <activity android:name=".operator.Activity_EmptyNeverError"/>
+        <activity android:name=".operator.Activity_Map"/>
+        <activity android:name=".operator.Activity_FlatMap"/>
 
     </application>
 

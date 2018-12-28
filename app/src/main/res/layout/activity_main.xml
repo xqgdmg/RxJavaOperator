@@ -88,6 +88,94 @@
             android:textSize="14sp"
             android:text="Defer" />
 
+        <TextView
+            android:id="@+id/tvTimer"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Timer" />
+
+        <TextView
+            android:id="@+id/tvInterval"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Interval" />
+
+        <TextView
+            android:id="@+id/tvIntervalRange"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="IntervalRange" />
+
+        <TextView
+            android:id="@+id/tvRange"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Range" />
+
+        <TextView
+            android:id="@+id/tvRangeLong"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="RangeLong" />
+
+        <TextView
+            android:id="@+id/tvEmptyNeverError"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="EmptyNeverError" />
+
+        <TextView
+            android:id="@+id/tvMap"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Map" />
+
+        <TextView
+            android:id="@+id/tvFlatMap"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="FlatMap" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
