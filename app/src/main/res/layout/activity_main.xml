@@ -319,6 +319,28 @@
             android:textSize="14sp"
             android:text="Collect" />
 
+        <TextView
+            android:id="@+id/tvStartWith_StartWithArray"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="StartWith_StartWithArray" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Count" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

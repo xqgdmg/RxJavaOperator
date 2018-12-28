@@ -13,6 +13,7 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_Concat;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatArray;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatArrayDelayError_MergeArrayDelayError;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatMap;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Count;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Create;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Defer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_EmptyNeverError;
@@ -31,6 +32,7 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_Range;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_RangeLong;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Reduce;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Scan;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_StartWith_StartWithArray;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
@@ -65,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvCombineLatest_CombineLatestDelayError;
     private TextView tvReduce;
     private TextView tvCollect;
+    private TextView tvStartWith_StartWithArray;
+    private TextView tvCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvCombineLatest_CombineLatestDelayError.setOnClickListener(this);
         tvReduce.setOnClickListener(this);
         tvCollect.setOnClickListener(this);
+        tvStartWith_StartWithArray.setOnClickListener(this);
+        tvCount.setOnClickListener(this);
     }
 
     private void initView() {
@@ -135,6 +141,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvCombineLatest_CombineLatestDelayError = (TextView) findViewById(R.id.tvCombineLatest_CombineLatestDelayError);
         tvReduce = (TextView) findViewById(R.id.tvReduce);
         tvCollect = (TextView) findViewById(R.id.tvCollect);
+        tvStartWith_StartWithArray = (TextView) findViewById(R.id.tvStartWith_StartWithArray);
+        tvCount = (TextView) findViewById(R.id.tvCount);
     }
 
     @Override
@@ -222,6 +230,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvCollect:
                 startActivity(new Intent(MainActivity.this, Activity_Collect.class));
+                break;
+            case R.id.tvStartWith_StartWithArray:
+                startActivity(new Intent(MainActivity.this, Activity_StartWith_StartWithArray.class));
+                break;
+            case R.id.tvCount:
+                startActivity(new Intent(MainActivity.this, Activity_Count.class));
                 break;
         }
     }

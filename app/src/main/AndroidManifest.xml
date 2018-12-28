@@ -45,6 +45,8 @@
         <activity android:name=".operator.Activity_CombineLatest_CombineLatestDelayError"/>
         <activity android:name=".operator.Activity_Reduce"/>
         <activity android:name=".operator.Activity_Collect"/>
+        <activity android:name=".operator.Activity_StartWith_StartWithArray"/>
+        <activity android:name=".operator.Activity_Count"/>
 
     </application>
 
