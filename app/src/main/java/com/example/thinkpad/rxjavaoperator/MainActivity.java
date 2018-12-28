@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Buffer;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatMap;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Create;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Defer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_EmptyNeverError;
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvEmptyNeverError;
     private TextView tvMap;
     private TextView tvFlatMap;
+    private TextView tvConcatMap;
+    private TextView tvBuffer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvEmptyNeverError.setOnClickListener(this);
         tvMap.setOnClickListener(this);
         tvFlatMap.setOnClickListener(this);
+        tvConcatMap.setOnClickListener(this);
+        tvBuffer.setOnClickListener(this);
     }
 
     private void initView() {
@@ -83,6 +89,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvEmptyNeverError = (TextView) findViewById(R.id.tvEmptyNeverError);
         tvMap = (TextView) findViewById(R.id.tvMap);
         tvFlatMap = (TextView) findViewById(R.id.tvFlatMap);
+        tvConcatMap = (TextView) findViewById(R.id.tvConcatMap);
+        tvBuffer = (TextView) findViewById(R.id.tvBuffer);
     }
 
     @Override
@@ -132,6 +140,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvFlatMap:
                 startActivity(new Intent(MainActivity.this, Activity_FlatMap.class));
+                break;
+            case R.id.tvConcatMap:
+                startActivity(new Intent(MainActivity.this, Activity_ConcatMap.class));
+                break;
+            case R.id.tvBuffer:
+                startActivity(new Intent(MainActivity.this, Activity_Buffer.class));
                 break;
         }
     }

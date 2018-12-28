@@ -32,6 +32,8 @@
         <activity android:name=".operator.Activity_EmptyNeverError"/>
         <activity android:name=".operator.Activity_Map"/>
         <activity android:name=".operator.Activity_FlatMap"/>
+        <activity android:name=".operator.Activity_ConcatMap"/>
+        <activity android:name=".operator.Activity_Buffer"/>
 
     </application>
 
