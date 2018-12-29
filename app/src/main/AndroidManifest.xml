@@ -47,6 +47,20 @@
         <activity android:name=".operator.Activity_Collect"/>
         <activity android:name=".operator.Activity_StartWith_StartWithArray"/>
         <activity android:name=".operator.Activity_Count"/>
+        <activity android:name=".operator.Activity_Delay"/>
+        <activity android:name=".operator.Activity_DoOnEach"/>
+        <activity android:name=".operator.Activity_DoOnNext"/>
+        <activity android:name=".operator.Activity_DoAfterNext"/>
+        <activity android:name=".operator.Activity_DoOnComplete"/>
+        <activity android:name=".operator.Activity_DoOnError"/>
+        <activity android:name=".operator.Activity_DoOnSubscribe"/>
+        <activity android:name=".operator.Activity_DoOnDispose"/>
+        <activity android:name=".operator.Activity_DoOnLifecycle"/>
+        <activity android:name=".operator.Activity_doOnTerminate_doAfterTerminate"/>
+        <activity android:name=".operator.Activity_doFinally"/>
+        <activity android:name=".operator.Activity_onErrorReturn"/>
+        <activity android:name=".operator.Activity_onErrorResumeNext"/>
+        <activity android:name=".operator.Activity_onExceptionResumeNext"/>
 
     </application>
 

@@ -16,6 +16,15 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_ConcatMap;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Count;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Create;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Defer;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_Delay;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoAfterNext;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnComplete;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnDispose;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnEach;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnError;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnLifecycle;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnNext;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_DoOnSubscribe;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_EmptyNeverError;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FlatMap;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_FromArray;
@@ -36,6 +45,11 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_StartWith_StartWith
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_doFinally;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_doOnTerminate_doAfterTerminate;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorResumeNext;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorReturn;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_onExceptionResumeNext;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -69,6 +83,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvCollect;
     private TextView tvStartWith_StartWithArray;
     private TextView tvCount;
+    private TextView tvDelay;
+    private TextView tvDoOnEach;
+    private TextView tvDoOnNext;
+    private TextView tvDoAfterNext;
+    private TextView tvDoOnComplete;
+    private TextView tvDoOnError;
+    private TextView tvDoOnSubscribe;
+    private TextView tvDoOnDispose;
+    private TextView tvDoOnLifecycle;
+    private TextView tv_doOnTerminate_doAfterTerminate;
+    private TextView tv_doFinally;
+    private TextView tv_onErrorReturn;
+    private TextView tv_onErrorResumeNext;
+    private TextView tv_onExceptionResumeNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +138,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvCollect.setOnClickListener(this);
         tvStartWith_StartWithArray.setOnClickListener(this);
         tvCount.setOnClickListener(this);
+        tvDelay.setOnClickListener(this);
+        tvDoOnEach.setOnClickListener(this);
+        tvDoOnNext.setOnClickListener(this);
+        tvDoAfterNext.setOnClickListener(this);
+        tvDoOnComplete.setOnClickListener(this);
+        tvDoOnError.setOnClickListener(this);
+        tvDoOnSubscribe.setOnClickListener(this);
+        tvDoOnDispose.setOnClickListener(this);
+        tvDoOnLifecycle.setOnClickListener(this);
+        tv_doOnTerminate_doAfterTerminate.setOnClickListener(this);
+        tv_doFinally.setOnClickListener(this);
+        tv_onErrorReturn.setOnClickListener(this);
+        tv_onErrorResumeNext.setOnClickListener(this);
+        tv_onExceptionResumeNext.setOnClickListener(this);
     }
 
     private void initView() {
@@ -143,6 +185,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvCollect = (TextView) findViewById(R.id.tvCollect);
         tvStartWith_StartWithArray = (TextView) findViewById(R.id.tvStartWith_StartWithArray);
         tvCount = (TextView) findViewById(R.id.tvCount);
+        tvDelay = (TextView) findViewById(R.id.tvDelay);
+        tvDoOnEach = (TextView) findViewById(R.id.tvDoOnEach);
+        tvDoOnNext = (TextView) findViewById(R.id.tvDoOnNext);
+        tvDoAfterNext = (TextView) findViewById(R.id.tvDoAfterNext);
+        tvDoOnComplete = (TextView) findViewById(R.id.tvDoOnComplete);
+        tvDoOnError = (TextView) findViewById(R.id.tvDoOnError);
+        tvDoOnSubscribe = (TextView) findViewById(R.id.tvDoOnSubscribe);
+        tvDoOnDispose = (TextView) findViewById(R.id.tvDoOnDispose);
+        tvDoOnLifecycle = (TextView) findViewById(R.id.tvDoOnLifecycle);
+        tv_doOnTerminate_doAfterTerminate = (TextView) findViewById(R.id.tv_doOnTerminate_doAfterTerminate);
+        tv_doFinally = (TextView) findViewById(R.id.tv_doFinally);
+        tv_onErrorReturn = (TextView) findViewById(R.id.tv_onErrorReturn);
+        tv_onErrorResumeNext = (TextView) findViewById(R.id.tv_onErrorResumeNext);
+        tv_onExceptionResumeNext = (TextView) findViewById(R.id.tv_onExceptionResumeNext);
     }
 
     @Override
@@ -236,6 +292,48 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvCount:
                 startActivity(new Intent(MainActivity.this, Activity_Count.class));
+                break;
+            case R.id.tvDelay:
+                startActivity(new Intent(MainActivity.this, Activity_Delay.class));
+                break;
+            case R.id.tvDoOnEach:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnEach.class));
+                break;
+            case R.id.tvDoOnNext:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnNext.class));
+                break;
+            case R.id.tvDoAfterNext:
+                startActivity(new Intent(MainActivity.this, Activity_DoAfterNext.class));
+                break;
+            case R.id.tvDoOnComplete:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnComplete.class));
+                break;
+            case R.id.tvDoOnError:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnError.class));
+                break;
+            case R.id.tvDoOnSubscribe:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnSubscribe.class));
+                break;
+            case R.id.tvDoOnDispose:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnDispose.class));
+                break;
+            case R.id.tvDoOnLifecycle:
+                startActivity(new Intent(MainActivity.this, Activity_DoOnLifecycle.class));
+                break;
+            case R.id.tv_doOnTerminate_doAfterTerminate:
+                startActivity(new Intent(MainActivity.this, Activity_doOnTerminate_doAfterTerminate.class));
+                break;
+            case R.id.tv_doFinally:
+                startActivity(new Intent(MainActivity.this, Activity_doFinally.class));
+                break;
+            case R.id.tv_onErrorReturn:
+                startActivity(new Intent(MainActivity.this, Activity_onErrorReturn.class));
+                break;
+            case R.id.tv_onErrorResumeNext:
+                startActivity(new Intent(MainActivity.this, Activity_onErrorResumeNext.class));
+                break;
+            case R.id.tv_onExceptionResumeNext:
+                startActivity(new Intent(MainActivity.this, Activity_onExceptionResumeNext.class));
                 break;
         }
     }

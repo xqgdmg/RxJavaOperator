@@ -341,6 +341,160 @@
             android:textSize="14sp"
             android:text="Count" />
 
+        <TextView
+            android:id="@+id/tvDelay"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="Delay" />
+
+        <TextView
+            android:id="@+id/tvDoOnEach"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnEach" />
+
+        <TextView
+            android:id="@+id/tvDoOnNext"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnNext" />
+
+        <TextView
+            android:id="@+id/tvDoAfterNext"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoAfterNext" />
+
+        <TextView
+            android:id="@+id/tvDoOnComplete"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnComplete" />
+
+        <TextView
+            android:id="@+id/tvDoOnError"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnError" />
+
+        <TextView
+            android:id="@+id/tvDoOnSubscribe"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnSubscribe" />
+
+        <TextView
+            android:id="@+id/tvDoOnDispose"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnDispose" />
+
+        <TextView
+            android:id="@+id/tvDoOnLifecycle"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="DoOnLifecycle" />
+
+        <TextView
+            android:id="@+id/tv_doOnTerminate_doAfterTerminate"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="doOnTerminate_doAfterTerminate" />
+
+        <TextView
+            android:id="@+id/tv_doFinally"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="doFinally" />
+
+        <TextView
+            android:id="@+id/tv_onErrorReturn"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="onErrorReturn" />
+
+        <TextView
+            android:id="@+id/tv_onErrorResumeNext"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="onErrorResumeNext" />
+
+        <TextView
+            android:id="@+id/tv_onExceptionResumeNext"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="onExceptionResumeNext" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

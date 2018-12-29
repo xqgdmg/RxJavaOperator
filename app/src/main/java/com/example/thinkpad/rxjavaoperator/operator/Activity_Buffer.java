@@ -18,6 +18,7 @@ import io.reactivex.disposables.Disposable;
  * @description: 从需要发送的事件当中获取一定数量的事件，并将这些事件放到缓冲区当中一并发出。（会造成事件重复发送）
  */
 public class Activity_Buffer extends Activity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
