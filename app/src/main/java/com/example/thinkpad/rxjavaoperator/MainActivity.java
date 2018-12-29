@@ -45,9 +45,13 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_StartWith_StartWith
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_distinct;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_distinctUntilChanged;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doFinally;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doOnTerminate_doAfterTerminate;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_filter;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_observeOn;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_ofType;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorResumeNext;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorReturn;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onExceptionResumeNext;
@@ -56,6 +60,7 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_repeatWhen;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retry;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retryUntil;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retryWhen;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_skip;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_subscribeOn;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -111,6 +116,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv_repeatWhen;
     private TextView tv_subscribeOn;
     private TextView tv_observeOn;
+    private TextView tv_filter;
+    private TextView tv_ofType;
+    private TextView tv_skip;
+    private TextView tv_distinct;
+    private TextView tv_distinctUntilChanged;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,6 +183,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_repeatWhen.setOnClickListener(this);
         tv_subscribeOn.setOnClickListener(this);
         tv_observeOn.setOnClickListener(this);
+        tv_filter.setOnClickListener(this);
+        tv_ofType.setOnClickListener(this);
+        tv_skip.setOnClickListener(this);
+        tv_distinct.setOnClickListener(this);
+        tv_distinctUntilChanged.setOnClickListener(this);
     }
 
     private void initView() {
@@ -227,6 +242,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_repeatWhen = (TextView) findViewById(R.id.tv_repeatWhen);
         tv_subscribeOn = (TextView) findViewById(R.id.tv_subscribeOn);
         tv_observeOn = (TextView) findViewById(R.id.tv_observeOn);
+        tv_filter = (TextView) findViewById(R.id.tv_filter);
+        tv_ofType = (TextView) findViewById(R.id.tv_ofType);
+        tv_skip = (TextView) findViewById(R.id.tv_skip);
+        tv_distinct = (TextView) findViewById(R.id.tv_distinct);
+        tv_distinctUntilChanged = (TextView) findViewById(R.id.tv_distinctUntilChanged);
     }
 
     @Override
@@ -383,6 +403,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_observeOn:
                 startActivity(new Intent(MainActivity.this, Activity_observeOn.class));
+                break;
+            case R.id.tv_filter:
+                startActivity(new Intent(MainActivity.this, Activity_filter.class));
+                break;
+            case R.id.tv_ofType:
+                startActivity(new Intent(MainActivity.this, Activity_ofType.class));
+                break;
+            case R.id.tv_skip:
+                startActivity(new Intent(MainActivity.this, Activity_skip.class));
+                break;
+            case R.id.tv_distinct:
+                startActivity(new Intent(MainActivity.this, Activity_distinct.class));
+                break;
+            case R.id.tv_distinctUntilChanged:
+                startActivity(new Intent(MainActivity.this, Activity_distinctUntilChanged.class));
                 break;
         }
     }

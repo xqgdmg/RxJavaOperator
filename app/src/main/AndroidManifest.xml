@@ -68,6 +68,11 @@
         <activity android:name=".operator.Activity_repeatWhen"/>
         <activity android:name=".operator.Activity_subscribeOn"/>
         <activity android:name=".operator.Activity_observeOn"/>
+        <activity android:name=".operator.Activity_filter"/>
+        <activity android:name=".operator.Activity_ofType"/>
+        <activity android:name=".operator.Activity_skip"/>
+        <activity android:name=".operator.Activity_distinct"/>
+        <activity android:name=".operator.Activity_distinctUntilChanged"/>
 
     </application>
 

@@ -13,564 +13,619 @@
 
         <TextView
             android:id="@+id/tvCreate"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="create"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="create" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvJust"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="just"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="just" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvFromArray"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="FromArray"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="FromArray" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvFromCallable"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="FromCallable"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="FromCallable" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvFromFuture"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="FromFuture"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="FromFuture" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvFromIterable"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="FromIterable"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="FromIterable" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDefer"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Defer"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Defer" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvTimer"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Timer"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Timer" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvInterval"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Interval"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Interval" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvIntervalRange"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="IntervalRange"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="IntervalRange" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvRange"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Range"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Range" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvRangeLong"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="RangeLong"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="RangeLong" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvEmptyNeverError"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="EmptyNeverError"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="EmptyNeverError" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvMap"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Map"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Map" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvFlatMap"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="FlatMap"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="FlatMap" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvConcatMap"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="ConcatMap"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="ConcatMap" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvBuffer"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Buffer"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Buffer" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvGroupBy"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="GroupBy"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="GroupBy" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvScan"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Scan"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Scan" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvWindow"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Window"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Window" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvConcat"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Concat"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Concat" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvConcatArray"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="ConcatArray"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="ConcatArray" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvConcatMerge"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="ConcatMerge"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="ConcatMerge" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvConcatArrayDelayError_MergeArrayDelayError"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="ConcatArrayDelayError_MergeArrayDelayError"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="ConcatArrayDelayError_MergeArrayDelayError" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvZip"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Zip"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Zip" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvCombineLatest_CombineLatestDelayError"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="CombineLatest_CombineLatestDelayError"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="CombineLatest_CombineLatestDelayError" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvReduce"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Reduce"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Reduce" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvCollect"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Collect"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Collect" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvStartWith_StartWithArray"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="StartWith_StartWithArray"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="StartWith_StartWithArray" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvCount"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Count"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Count" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDelay"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="Delay"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="Delay" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnEach"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnEach"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnEach" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnNext"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnNext"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnNext" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoAfterNext"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoAfterNext"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoAfterNext" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnComplete"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnComplete"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnComplete" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnError"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnError"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnError" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnSubscribe"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnSubscribe"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnSubscribe" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnDispose"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnDispose"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnDispose" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvDoOnLifecycle"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="DoOnLifecycle"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="DoOnLifecycle" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_doOnTerminate_doAfterTerminate"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="doOnTerminate_doAfterTerminate"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="doOnTerminate_doAfterTerminate" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_doFinally"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="doFinally"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="doFinally" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_onErrorReturn"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="onErrorReturn"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="onErrorReturn" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_onErrorResumeNext"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="onErrorResumeNext"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="onErrorResumeNext" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_onExceptionResumeNext"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="onExceptionResumeNext"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="onExceptionResumeNext" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_retry"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="retry"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="retry" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_retryUntil"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="retryUntil"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="retryUntil" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_retryWhen"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="retryWhen"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="retryWhen" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_repeat"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="repeat"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="repeat" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_repeatWhen"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="repeatWhen"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="repeatWhen" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_subscribeOn"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="subscribeOn"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="subscribeOn" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_observeOn"
-            android:background="#55ff0000"
-            android:gravity="center"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="observeOn"
             android:textColor="#19191a"
-            android:textSize="14sp"
-            android:text="observeOn" />
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="filter"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_ofType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="ofType"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="skip"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_distinct"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="distinct"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_distinctUntilChanged"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="distinctUntilChanged"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
