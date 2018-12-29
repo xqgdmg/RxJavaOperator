@@ -47,9 +47,16 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doFinally;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doOnTerminate_doAfterTerminate;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_observeOn;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorResumeNext;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorReturn;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onExceptionResumeNext;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_repeat;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_repeatWhen;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_retry;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_retryUntil;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_retryWhen;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_subscribeOn;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -97,6 +104,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv_onErrorReturn;
     private TextView tv_onErrorResumeNext;
     private TextView tv_onExceptionResumeNext;
+    private TextView tv_retry;
+    private TextView tv_retryUntil;
+    private TextView tv_retryWhen;
+    private TextView tv_repeat;
+    private TextView tv_repeatWhen;
+    private TextView tv_subscribeOn;
+    private TextView tv_observeOn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,6 +166,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_onErrorReturn.setOnClickListener(this);
         tv_onErrorResumeNext.setOnClickListener(this);
         tv_onExceptionResumeNext.setOnClickListener(this);
+        tv_retry.setOnClickListener(this);
+        tv_retryUntil.setOnClickListener(this);
+        tv_retryWhen.setOnClickListener(this);
+        tv_repeat.setOnClickListener(this);
+        tv_repeatWhen.setOnClickListener(this);
+        tv_subscribeOn.setOnClickListener(this);
+        tv_observeOn.setOnClickListener(this);
     }
 
     private void initView() {
@@ -199,6 +220,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_onErrorReturn = (TextView) findViewById(R.id.tv_onErrorReturn);
         tv_onErrorResumeNext = (TextView) findViewById(R.id.tv_onErrorResumeNext);
         tv_onExceptionResumeNext = (TextView) findViewById(R.id.tv_onExceptionResumeNext);
+        tv_retry = (TextView) findViewById(R.id.tv_retry);
+        tv_retryUntil = (TextView) findViewById(R.id.tv_retryUntil);
+        tv_retryWhen = (TextView) findViewById(R.id.tv_retryWhen);
+        tv_repeat = (TextView) findViewById(R.id.tv_repeat);
+        tv_repeatWhen = (TextView) findViewById(R.id.tv_repeatWhen);
+        tv_subscribeOn = (TextView) findViewById(R.id.tv_subscribeOn);
+        tv_observeOn = (TextView) findViewById(R.id.tv_observeOn);
     }
 
     @Override
@@ -334,6 +362,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_onExceptionResumeNext:
                 startActivity(new Intent(MainActivity.this, Activity_onExceptionResumeNext.class));
+                break;
+            case R.id.tv_retry:
+                startActivity(new Intent(MainActivity.this, Activity_retry.class));
+                break;
+            case R.id.tv_retryUntil:
+                startActivity(new Intent(MainActivity.this, Activity_retryUntil.class));
+                break;
+            case R.id.tv_retryWhen:
+                startActivity(new Intent(MainActivity.this, Activity_retryWhen.class));
+                break;
+            case R.id.tv_repeat:
+                startActivity(new Intent(MainActivity.this, Activity_repeat.class));
+                break;
+            case R.id.tv_repeatWhen:
+                startActivity(new Intent(MainActivity.this, Activity_repeatWhen.class));
+                break;
+            case R.id.tv_subscribeOn:
+                startActivity(new Intent(MainActivity.this, Activity_subscribeOn.class));
+                break;
+            case R.id.tv_observeOn:
+                startActivity(new Intent(MainActivity.this, Activity_observeOn.class));
                 break;
         }
     }

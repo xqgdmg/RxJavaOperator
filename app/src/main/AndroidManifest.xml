@@ -61,6 +61,13 @@
         <activity android:name=".operator.Activity_onErrorReturn"/>
         <activity android:name=".operator.Activity_onErrorResumeNext"/>
         <activity android:name=".operator.Activity_onExceptionResumeNext"/>
+        <activity android:name=".operator.Activity_retry"/>
+        <activity android:name=".operator.Activity_retryUntil"/>
+        <activity android:name=".operator.Activity_retryWhen"/>
+        <activity android:name=".operator.Activity_repeat"/>
+        <activity android:name=".operator.Activity_repeatWhen"/>
+        <activity android:name=".operator.Activity_subscribeOn"/>
+        <activity android:name=".operator.Activity_observeOn"/>
 
     </application>
 

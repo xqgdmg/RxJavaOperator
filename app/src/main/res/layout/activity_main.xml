@@ -495,6 +495,83 @@
             android:textSize="14sp"
             android:text="onExceptionResumeNext" />
 
+        <TextView
+            android:id="@+id/tv_retry"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="retry" />
+
+        <TextView
+            android:id="@+id/tv_retryUntil"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="retryUntil" />
+
+        <TextView
+            android:id="@+id/tv_retryWhen"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="retryWhen" />
+
+        <TextView
+            android:id="@+id/tv_repeat"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="repeat" />
+
+        <TextView
+            android:id="@+id/tv_repeatWhen"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="repeatWhen" />
+
+        <TextView
+            android:id="@+id/tv_subscribeOn"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="subscribeOn" />
+
+        <TextView
+            android:id="@+id/tv_observeOn"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#19191a"
+            android:textSize="14sp"
+            android:text="observeOn" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
