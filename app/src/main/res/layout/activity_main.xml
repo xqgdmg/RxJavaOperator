@@ -627,6 +627,50 @@
             android:textColor="#19191a"
             android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/tv_take"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="take"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_debounce"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="debounce"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_firstElement_lastElement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="firstElement_lastElement"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_elementAt_elementAtOrError"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="elementAt_elementAtOrError"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -73,6 +73,10 @@
         <activity android:name=".operator.Activity_skip"/>
         <activity android:name=".operator.Activity_distinct"/>
         <activity android:name=".operator.Activity_distinctUntilChanged"/>
+        <activity android:name=".operator.Activity_take"/>
+        <activity android:name=".operator.Activity_debounce"/>
+        <activity android:name=".operator.Activity_firstElement_lastElement"/>
+        <activity android:name=".operator.Activity_elementAt_elementAtOrError"/>
 
     </application>
 

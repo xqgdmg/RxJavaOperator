@@ -45,11 +45,14 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_StartWith_StartWith
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_debounce;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_distinct;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_distinctUntilChanged;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doFinally;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doOnTerminate_doAfterTerminate;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_elementAt_elementAtOrError;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_filter;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_firstElement_lastElement;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_observeOn;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_ofType;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorResumeNext;
@@ -62,6 +65,7 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_retryUntil;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retryWhen;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_skip;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_subscribeOn;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_take;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -121,6 +125,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv_skip;
     private TextView tv_distinct;
     private TextView tv_distinctUntilChanged;
+    private TextView tv_take;
+    private TextView tv_debounce;
+    private TextView tv_firstElement_lastElement;
+    private TextView tv_elementAt_elementAtOrError;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -188,6 +196,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_skip.setOnClickListener(this);
         tv_distinct.setOnClickListener(this);
         tv_distinctUntilChanged.setOnClickListener(this);
+        tv_take.setOnClickListener(this);
+        tv_debounce.setOnClickListener(this);
+        tv_firstElement_lastElement.setOnClickListener(this);
+        tv_elementAt_elementAtOrError.setOnClickListener(this);
     }
 
     private void initView() {
@@ -247,6 +259,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_skip = (TextView) findViewById(R.id.tv_skip);
         tv_distinct = (TextView) findViewById(R.id.tv_distinct);
         tv_distinctUntilChanged = (TextView) findViewById(R.id.tv_distinctUntilChanged);
+        tv_take = (TextView) findViewById(R.id.tv_take);
+        tv_debounce = (TextView) findViewById(R.id.tv_debounce);
+        tv_firstElement_lastElement = (TextView) findViewById(R.id.tv_firstElement_lastElement);
+        tv_elementAt_elementAtOrError = (TextView) findViewById(R.id.tv_elementAt_elementAtOrError);
     }
 
     @Override
@@ -418,6 +434,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_distinctUntilChanged:
                 startActivity(new Intent(MainActivity.this, Activity_distinctUntilChanged.class));
+                break;
+            case R.id.tv_take:
+                startActivity(new Intent(MainActivity.this, Activity_take.class));
+                break;
+            case R.id.tv_debounce:
+                startActivity(new Intent(MainActivity.this, Activity_debounce.class));
+                break;
+            case R.id.tv_firstElement_lastElement:
+                startActivity(new Intent(MainActivity.this, Activity_firstElement_lastElement.class));
+                break;
+            case R.id.tv_elementAt_elementAtOrError:
+                startActivity(new Intent(MainActivity.this, Activity_elementAt_elementAtOrError.class));
                 break;
         }
     }
