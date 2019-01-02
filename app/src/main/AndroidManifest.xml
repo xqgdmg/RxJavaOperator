@@ -84,6 +84,9 @@
         <activity android:name=".operator.Activity_skipUntil"/>
         <activity android:name=".operator.Activity_sequenceEqual"/>
         <activity android:name=".operator.Activity_contains"/>
+        <activity android:name=".operator.Activity_isEmpty"/>
+        <activity android:name=".operator.Activity_amb"/>
+        <activity android:name=".operator.Activity_defaultIfEmpty"/>
 
     </application>
 

@@ -748,6 +748,39 @@
             android:textColor="#19191a"
             android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/tv_isEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="contains"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_amb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="amb"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_defaultIfEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="defaultIfEmpty"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -46,8 +46,10 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_all;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_amb;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_contains;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_debounce;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_defaultIfEmpty;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_distinct;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_distinctUntilChanged;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_doFinally;
@@ -55,6 +57,7 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_doOnTerminate_doAft
 import com.example.thinkpad.rxjavaoperator.operator.Activity_elementAt_elementAtOrError;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_filter;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_firstElement_lastElement;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_isEmpty;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_observeOn;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_ofType;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_onErrorResumeNext;
@@ -143,6 +146,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv_skipUntil;
     private TextView tv_sequenceEqual;
     private TextView tv_contains;
+    private TextView tv_isEmpty;
+    private TextView tv_amb;
+    private TextView tv_defaultIfEmpty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -221,6 +227,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_skipUntil.setOnClickListener(this);
         tv_sequenceEqual.setOnClickListener(this);
         tv_contains.setOnClickListener(this);
+        tv_isEmpty.setOnClickListener(this);
+        tv_amb.setOnClickListener(this);
+        tv_defaultIfEmpty.setOnClickListener(this);
     }
 
     private void initView() {
@@ -291,6 +300,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_skipUntil = (TextView) findViewById(R.id.tv_skipUntil);
         tv_sequenceEqual = (TextView) findViewById(R.id.tv_sequenceEqual);
         tv_contains = (TextView) findViewById(R.id.tv_contains);
+        tv_isEmpty = (TextView) findViewById(R.id.tv_isEmpty);
+        tv_amb = (TextView) findViewById(R.id.tv_amb);
+        tv_defaultIfEmpty = (TextView) findViewById(R.id.tv_defaultIfEmpty);
     }
 
     @Override
@@ -495,6 +507,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_contains:
                 startActivity(new Intent(MainActivity.this, Activity_contains.class));
+                break;
+            case R.id.tv_isEmpty:
+                startActivity(new Intent(MainActivity.this, Activity_isEmpty.class));
+                break;
+            case R.id.tv_amb:
+                startActivity(new Intent(MainActivity.this, Activity_amb.class));
+                break;
+            case R.id.tv_defaultIfEmpty:
+                startActivity(new Intent(MainActivity.this, Activity_defaultIfEmpty.class));
                 break;
         }
     }
