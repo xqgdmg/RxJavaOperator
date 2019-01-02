@@ -77,6 +77,13 @@
         <activity android:name=".operator.Activity_debounce"/>
         <activity android:name=".operator.Activity_firstElement_lastElement"/>
         <activity android:name=".operator.Activity_elementAt_elementAtOrError"/>
+        <activity android:name=".operator.Activity_all"/>
+        <activity android:name=".operator.Activity_takeWhile"/>
+        <activity android:name=".operator.Activity_skipWhile"/>
+        <activity android:name=".operator.Activity_takeUntil"/>
+        <activity android:name=".operator.Activity_skipUntil"/>
+        <activity android:name=".operator.Activity_sequenceEqual"/>
+        <activity android:name=".operator.Activity_contains"/>
 
     </application>
 

@@ -45,6 +45,8 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_StartWith_StartWith
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Timer;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Window;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_Zip;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_all;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_contains;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_debounce;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_distinct;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_distinctUntilChanged;
@@ -63,9 +65,14 @@ import com.example.thinkpad.rxjavaoperator.operator.Activity_repeatWhen;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retry;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retryUntil;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_retryWhen;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_sequenceEqual;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_skip;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_skipUntil;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_skipWhile;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_subscribeOn;
 import com.example.thinkpad.rxjavaoperator.operator.Activity_take;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_takeUntil;
+import com.example.thinkpad.rxjavaoperator.operator.Activity_takeWhile;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -129,6 +136,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv_debounce;
     private TextView tv_firstElement_lastElement;
     private TextView tv_elementAt_elementAtOrError;
+    private TextView tv_all;
+    private TextView tv_takeWhile;
+    private TextView tv_skipWhile;
+    private TextView tv_takeUntil;
+    private TextView tv_skipUntil;
+    private TextView tv_sequenceEqual;
+    private TextView tv_contains;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -200,6 +214,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_debounce.setOnClickListener(this);
         tv_firstElement_lastElement.setOnClickListener(this);
         tv_elementAt_elementAtOrError.setOnClickListener(this);
+        tv_all.setOnClickListener(this);
+        tv_takeWhile.setOnClickListener(this);
+        tv_skipWhile.setOnClickListener(this);
+        tv_takeUntil.setOnClickListener(this);
+        tv_skipUntil.setOnClickListener(this);
+        tv_sequenceEqual.setOnClickListener(this);
+        tv_contains.setOnClickListener(this);
     }
 
     private void initView() {
@@ -263,6 +284,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_debounce = (TextView) findViewById(R.id.tv_debounce);
         tv_firstElement_lastElement = (TextView) findViewById(R.id.tv_firstElement_lastElement);
         tv_elementAt_elementAtOrError = (TextView) findViewById(R.id.tv_elementAt_elementAtOrError);
+        tv_all = (TextView) findViewById(R.id.tv_all);
+        tv_takeWhile = (TextView) findViewById(R.id.tv_takeWhile);
+        tv_skipWhile = (TextView) findViewById(R.id.tv_skipWhile);
+        tv_takeUntil = (TextView) findViewById(R.id.tv_takeUntil);
+        tv_skipUntil = (TextView) findViewById(R.id.tv_skipUntil);
+        tv_sequenceEqual = (TextView) findViewById(R.id.tv_sequenceEqual);
+        tv_contains = (TextView) findViewById(R.id.tv_contains);
     }
 
     @Override
@@ -446,6 +474,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_elementAt_elementAtOrError:
                 startActivity(new Intent(MainActivity.this, Activity_elementAt_elementAtOrError.class));
+                break;
+            case R.id.tv_all:
+                startActivity(new Intent(MainActivity.this, Activity_all.class));
+                break;
+            case R.id.tv_takeWhile:
+                startActivity(new Intent(MainActivity.this, Activity_takeWhile.class));
+                break;
+            case R.id.tv_skipWhile:
+                startActivity(new Intent(MainActivity.this, Activity_skipWhile.class));
+                break;
+            case R.id.tv_takeUntil:
+                startActivity(new Intent(MainActivity.this, Activity_takeUntil.class));
+                break;
+            case R.id.tv_skipUntil:
+                startActivity(new Intent(MainActivity.this, Activity_skipUntil.class));
+                break;
+            case R.id.tv_sequenceEqual:
+                startActivity(new Intent(MainActivity.this, Activity_sequenceEqual.class));
+                break;
+            case R.id.tv_contains:
+                startActivity(new Intent(MainActivity.this, Activity_contains.class));
                 break;
         }
     }

@@ -671,6 +671,83 @@
             android:textColor="#19191a"
             android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="all"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_takeWhile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="takeWhile"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_skipWhile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="skipWhile"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_takeUntil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="takeUntil"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_skipUntil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="skipUntil"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sequenceEqual"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="sequenceEqual"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_contains"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#55ff0000"
+            android:gravity="center"
+            android:text="contains"
+            android:textColor="#19191a"
+            android:textSize="14sp" />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
